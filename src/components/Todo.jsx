@@ -6,6 +6,7 @@ const Todo = () => {
     const[data, setData] = useState('');
     const[items, setItems] = useState([]);
 
+    //FUNCTION TO ADD ITEMS
     const addItem = () =>{
         if(!data){
             window.alert('Write something to add!')
@@ -13,9 +14,9 @@ const Todo = () => {
             setItems([...items, data]);
             setData('');
         }
-        
     }
 
+    //FUNCTION TO DELETE ITEM
     const deleteItem = (id) =>{
         const updatedItem = items.filter((elem, ind)=>{
             return(
@@ -24,7 +25,13 @@ const Todo = () => {
         });
         setItems(updatedItem);
     }
-  return (
+
+    // FUNCTION TO DELETE ALL ITEMS
+    const deleteAll = () =>{
+        setItems([]);
+    }
+
+ return (
     <div className='main'>
         <div className="whole-thing">
             <div className="form">
@@ -35,13 +42,14 @@ const Todo = () => {
                 return(
                     <div className="list" key={ind}>
                         <p>{elem}</p>
-                        <FontAwesomeIcon icon={faPenToSquare}/>
                         <FontAwesomeIcon icon={faTrash} onClick={()=>deleteItem(ind)}/>
                      </div>
                 )
             })}
+            <div className="delete-all">
+                <button className='btn' onClick={deleteAll}>Delete All</button>
+            </div>
             
-           
         </div>
     </div>
   )

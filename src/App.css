@@ -44,3 +44,17 @@
   border-radius: 0px 5px 5px 0px;
   color: white;
 }
+
+.delete-all{
+  margin: 20px;
+}
+
+.btn{
+  background-color: #3468C0;
+  border: none;
+  outline: none;
+  height: 2.67em;
+  width: 4em;
+  border-radius: 5px;
+  color: white;
+}
