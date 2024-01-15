@@ -1,6 +1,7 @@
 *{
-  background-color: #FFDD95;
+  background-color:#1D2B53;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .main{
@@ -12,18 +13,19 @@
 }
 
 .whole-thing{
-  background-color: #FF9843;
+  background-color: #FAEF5D;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin-top: 5%;
+  border-radius: 5px;
 }
 
 .form{
   margin-top: 20px;
-  background-color: #FF9843;
+  background-color: #FAEF5D;
   
 }
 .form input{
@@ -36,25 +38,69 @@
 }
 
 .form button{
-  background-color: #3468C0;
+  background-color: #FF004D;
   border: none;
   outline: none;
-  height: 2.67em;
+  height: 2.5em;
   width: 4em;
   border-radius: 0px 5px 5px 0px;
   color: white;
+  transition: all linear 0.2s;
+}
+
+.form button:hover{
+  background-color: #d80b49;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.list{
+  width: 68%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #8e4269;
+  border-radius: 5px;
+}
+
+.list p{
+  background-color: transparent;
+  padding-left: 10px;
+  color: white;
+}
+
+.icon{
+  background-color: transparent;
+  color: white;
+  transition: all linear 0.2s;
+}
+
+.icon:hover{
+  color: red;
+  transition: all linear 0.2s;
+  cursor: pointer;
 }
 
 .delete-all{
   margin: 20px;
+  background-color:#FAEF5D;
 }
 
 .btn{
-  background-color: #3468C0;
+  background-color: #FF004D;
   border: none;
   outline: none;
-  height: 2.67em;
-  width: 4em;
+  height: 2.5em;
+  width: 6em;
   border-radius: 5px;
   color: white;
+  transition: all linear 0.2s;
+  
+}
+
+.btn:hover{
+  background-color: #d80b49;
+  cursor: pointer;
+  transition: all linear 0.2s;
 }

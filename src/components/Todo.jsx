@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
+import {faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Todo = () => {
     const[data, setData] = useState('');
@@ -42,7 +42,7 @@ const Todo = () => {
                 return(
                     <div className="list" key={ind}>
                         <p>{elem}</p>
-                        <FontAwesomeIcon icon={faTrash} onClick={()=>deleteItem(ind)}/>
+                        <FontAwesomeIcon className='icon' icon={faTrash} onClick={()=>deleteItem(ind)}/>
                      </div>
                 )
             })}
